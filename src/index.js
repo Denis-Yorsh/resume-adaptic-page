@@ -2,6 +2,28 @@ import $ from "jquery";
 import "jquery-ui/dist/jquery-ui.min";
 
 $(() => {
+  // if (history.back()) {
+  //   location.reload();
+  // }
+  // location.reload()
+  // console.log(history.state);
+  // console.log(history.back());
+  // console.log(history.forward());
+
+  // $(window).blur(function () {
+  //   console.log("blur");
+  // });
+
+  // $(window).focus(function () {
+  //   console.log("focus");
+  // });
+  // let isReload = false;
+  // if (isReload) {
+  //   isReload = false;
+  //   location.reload();
+  // } else {
+  //   isReload = true;
+  // }
   const effectArray = [
     "explode",
     "bounce",

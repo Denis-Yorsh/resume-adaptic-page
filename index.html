@@ -7,12 +7,20 @@
     <script src="./dist/main.js"></script>
     <title>Resume</title>
   </head>
-  <body>
-    <main id="main" style="display: none">
+  <body class="body__conteiner">
+    <main
+      class="body__conteiner__main__container"
+      id="main"
+      style="display: none"
+    >
       <!-- Contacts section -->
-      <section>
-        <img src="./image/iam.jpg" alt="my-photo" />
-        <h1>Denis Yorsh</h1>
+      <section class="contact__section">
+        <img
+          class="contact__section__img"
+          src="./image/iam.jpg"
+          alt="my-photo"
+        />
+        <h1 class="contact__section__h1">Denis Yorsh</h1>
         <h3>Contacts</h3>
         <ul>
           <li>
@@ -29,96 +37,126 @@
           <li><a href="skype:denis_my_skype">denis_my_skype</a></li>
         </ul>
       </section>
-      <!-- Front-End section -->
-      <section>
-        <h2>Front-End</h2>
-        <ul>
-          <li>HTML 5</li>
-          <li>CSS 3</li>
-          <li>SASS (SCSS)</li>
-          <li>Bootstrap 5</li>
-          <li>Javs Script</li>
-          <li>TypeScript</li>
-          <li>jQuery</li>
-          <li>Angular</li>
-          <li>React</li>
-        </ul>
-      </section>
-      <!-- Front-End section -->
-      <section>
-        <h2>Back-End</h2>
-        <ul>
-          <li>Node JS</li>
-          <li>PHP</li>
-          <li>Laravel</li>
-          <li>Java Core</li>
-          <li>Java EE - Jakarta EE
+      <!-- Other -->
+      <div class="main__other__conteiner">
+        <div class="main__other__conteiner__frontEnd__beckEnd__section">
+          <!-- Front-End section -->
+          <section>
+            <h2>Front-End</h2>
             <ul>
-              <li>Servlet API</li>
-              <li>JDBC API</li>
-              <li>JSP</li>
-              <li>Expression Language</li>
-              <li>JSTL</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>SASS (SCSS)</li>
+              <li>Bootstrap 5</li>
+              <li>Javs Script</li>
+              <li>TypeScript</li>
+              <li>jQuery</li>
+              <li>Angular</li>
+              <li>React</li>
             </ul>
-          </li>
-          <li>SQL, JPQL</li>
-          <li>JPA & Hibernate (ORM)</li>
-          <li>Hibernate Validator</li>
-          <li>Lombok</li>
-          <li>Spring
+          </section>
+          <!-- Beck-End section -->
+          <section>
+            <h2>Back-End</h2>
             <ul>
-              <li>Inversion of Control (IoC)</li>
-              <li>Dependency Injection (DI)</li>
-              <li>Aspect Oriented Programming (AOP)</li>
-              <li>Spring Expression Language (SpEL)</li>
-              <li>Spring Framework</li>
-              <li>Spring MVC</li>
-              <li>Spring Boot</li>
-              <li>Spring Web</li>
-              <li>Spring Data JPA</li>
-              <li>Spring REST</li>
-              <li>Spring Security</li>
-              <li>Spring Cloud OpenFeign</li>
-              <li>Thymeleaf</li>
+              <li>Node JS</li>
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>Java Core</li>
+              <li>
+                Java EE - Jakarta EE
+                <ul>
+                  <li>Servlet API</li>
+                  <li>JDBC API</li>
+                  <li>JSP</li>
+                  <li>Expression Language</li>
+                  <li>JSTL</li>
+                </ul>
+              </li>
+              <li>SQL, JPQL</li>
+              <li>JPA & Hibernate (ORM)</li>
+              <li>Hibernate Validator</li>
+              <li>Lombok</li>
+              <li>
+                Spring
+                <ul>
+                  <li>Inversion of Control (IoC)</li>
+                  <li>Dependency Injection (DI)</li>
+                  <li>Aspect Oriented Programming (AOP)</li>
+                  <li>Spring Expression Language (SpEL)</li>
+                  <li>Spring Framework</li>
+                  <li>Spring MVC</li>
+                  <li>Spring Boot</li>
+                  <li>Spring Web</li>
+                  <li>Spring Data JPA</li>
+                  <li>Spring REST</li>
+                  <li>Spring Security</li>
+                  <li>Spring Cloud OpenFeign</li>
+                  <li>Thymeleaf</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-      </section>
-      <!-- Other section -->
-      <section>
-        <h2>Other</h2>
-        <ul>
-          <li>Docker</li>
-          <li>MySQL, PostgreSQL, H2 Database</li>
-          <li>IntelliJ IDEA, VS Code</li>
-          <li>Maven, WebPack</li>
-          <li>GitHub, Figma</li>
-        </ul>
-      </section>
-      <!-- Portfolio section -->
-      <section>
-        <h3>Portfolio</h3>
-        <ul>
-          <li><a href="https://github.com/Denis-Yorsh/diploma-itstep.git">My project</a></li>
-          <li><a href="https://github.com/Denis-Yorsh/resume-adaptic-page">Source files the resume</a></li>
-          <li><img src="https://www.codewars.com/users/DeNiS%20YoRsH/badges/small" alt="codewars"></li>
-        </ul>
-      </section>
-      <!-- Education section -->
-      <section>
-        <h2>Education</h2>
-        <p>It Step Academy Ukraine</p>
-        <p>Java, JavaScript · (ноября 2022 - октября 2023)</p>
-        <p>Компьютерная школа Hillel (IT School)</p>
-        <p>Java (апреля 2022 - октября 2022)</p>
-        <p>Kharkov National Economic University</p>
-        <p>Specialist, Economics of enterprises · (сентября 2004 - июня 2009)</p>
-      </section>
-      <!-- About me section -->
-      <section>
-        <h2>About me</h2>
-        <p>I was the first among my classmates in the course and I like learning programming and solving problems. When I was writing my diploma project, I liked this feeling when you achieve your own goals, although they told me “It won’t work out that way,” but the ability to think and Google paid off. I don’t back down when I hear “You won’t be able to...”, because every task can be approached from different angles.</p>
-      </section>
+          </section>
+        </div>
+        <!-- Other section -->
+        <section>
+          <h2>Other</h2>
+          <ul>
+            <li>Docker</li>
+            <li>MySQL, PostgreSQL, H2 Database</li>
+            <li>IntelliJ IDEA, VS Code</li>
+            <li>Maven, WebPack</li>
+            <li>GitHub, Figma</li>
+          </ul>
+        </section>
+        <!-- Portfolio section -->
+        <section>
+          <h3>Portfolio</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/Denis-Yorsh/diploma-itstep.git"
+                >My project</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Denis-Yorsh/resume-adaptic-page"
+                >Source files the resume</a
+              >
+            </li>
+            <li>
+              <img
+                src="https://www.codewars.com/users/DeNiS%20YoRsH/badges/small"
+                alt="codewars"
+              />
+            </li>
+          </ul>
+        </section>
+        <!-- Education section -->
+        <section>
+          <h2>Education</h2>
+          <p>It Step Academy Ukraine</p>
+          <p>Java, JavaScript · (ноября 2022 - октября 2023)</p>
+          <p>Компьютерная школа Hillel (IT School)</p>
+          <p>Java (апреля 2022 - октября 2022)</p>
+          <p>Kharkov National Economic University</p>
+          <p>
+            Specialist, Economics of enterprises · (сентября 2004 - июня 2009)
+          </p>
+        </section>
+        <!-- About me section -->
+        <section>
+          <h2>About me</h2>
+          <p>
+            I was the first among my classmates in the course and I like
+            learning programming and solving problems. When I was writing my
+            diploma project, I liked this feeling when you achieve your own
+            goals, although they told me “It won’t work out that way,” but the
+            ability to think and Google paid off. I don’t back down when I hear
+            “You won’t be able to...”, because every task can be approached from
+            different angles.
+          </p>
+        </section>
+      </div>
     </main>
   </body>
 </html>

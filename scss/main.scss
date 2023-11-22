@@ -1,5 +1,8 @@
 @import "./utils/normalize";
+@import "./utils/base";
+@import "./conteiner/body__conteiner";
+@import "./conteiner/main__conteiner";
 
-div {
-  color: red;
-}
+@import "./section/contact__section";
+@import "./conteiner/main__other__conteiner";
+@import "./conteiner/main__other__conteiner__frontEnd__beckEnd__section.scss";
