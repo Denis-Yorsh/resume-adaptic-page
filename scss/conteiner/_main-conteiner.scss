@@ -1,0 +1,9 @@
+.body-conteiner {
+  &__main-container {
+    display: flex;
+    background-color: #f5f7fa;
+    max-width: 370px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
