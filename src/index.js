@@ -15,7 +15,7 @@ $(() => {
   ];
   const random = () => Math.floor(Math.random() * (7 - 0 + 1) + 0);
   const main = $("#main");
-  $(main).toggle();
+  
   $(main).toggle(effectArray[random()], 2000);
 
   $("a").click((event) => {
