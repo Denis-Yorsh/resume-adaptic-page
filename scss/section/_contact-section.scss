@@ -1,8 +1,13 @@
 .contact-section {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: $color-darc-blue;
+  width: 370px;
   &__img {
     width: 370px;
     height: auto;
     margin: 40px 40px 40px 0;
+    border-radius: 120px;
   }
   &__h1 {
     width: 370px;
