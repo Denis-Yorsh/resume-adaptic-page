@@ -4,11 +4,20 @@
   background-color: $color-darc-blue;
   width: 370px;
   color: $color-white;
+  @media screen and (max-width: $br-mobile) {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-radius: 20px;
+  }
   &__img {
     width: 370px;
     height: auto;
     margin: 40px 40px 40px 0;
     border-radius: 120px;
+    @media screen and (max-width: $br-mobile) {
+      width: 100vw;
+    }
   }
   &__h1,
   &__p {

@@ -1,9 +1,12 @@
 .body-conteiner {
   max-width: 1200px;
-  min-width: 480px;
   background-color: $color-white;
   margin: 40px 131px 90px 40px;
   box-shadow: 10px -3px 100px $color-black;
-  border: .1px solid $color-light-white;
+  border: 0.1px solid $color-light-white;
   border-radius: 20px;
+  @media screen and (max-width: $br-mobile) {
+    width: 100vw;
+    margin: 0;
+  }
 }
