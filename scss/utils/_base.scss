@@ -1,20 +1,13 @@
 $color-light-white: #f5f7fa;
 $color-white: #ffffff;
 $color-black: #000;
-$color-darc-blue: #1E2939;
+$color-darc-blue: #1e2939;
 
-$br-mobile: 480px;
-$br-tablet: 768px;
 $br-1000: 1000px;
-$br-desktop: 1280;
 
 a {
   text-decoration: none;
   font-weight: 900;
-}
-
-ul {
-  list-style-type: none;
 }
 
 p {
@@ -22,5 +15,13 @@ p {
 }
 
 ul {
+  list-style-type: none;
   padding: 0;
+}
+
+.other-section,
+.portfolio-section,
+.education-section,
+.about-me-section {
+  margin: 0 20px 20px 20px;
 }

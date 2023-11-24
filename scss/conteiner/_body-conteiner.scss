@@ -5,12 +5,10 @@
   box-shadow: 10px -3px 100px $color-black;
   border: 0.1px solid $color-light-white;
   border-radius: 20px;
-  @media screen and (max-width: $br-mobile) {
+  @media (max-width: $br-1000) {
     max-width: 100vw;
-    margin: 0;
-  }
-  @media screen and (max-width: $br-1000) {
-    max-width: 100vw;
+    box-shadow: none;
+    border: none;
     margin: 0;
   }
 }
