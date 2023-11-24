@@ -4,7 +4,7 @@
     gap: 20px;
     background-color: $color-light-white;
     border-radius: 20px;
-    @media screen and (max-width: $br-mobile) {
+    @media screen and (max-width: $br-tablet) {
       flex-direction: column;
     }
   }

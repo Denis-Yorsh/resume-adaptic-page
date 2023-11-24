@@ -4,7 +4,7 @@
   background-color: $color-darc-blue;
   width: 370px;
   color: $color-white;
-  @media screen and (max-width: $br-mobile) {
+  @media screen and (max-width: $br-tablet) {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -15,7 +15,7 @@
     height: auto;
     margin: 40px 40px 40px 0;
     border-radius: 120px;
-    @media screen and (max-width: $br-mobile) {
+    @media screen and (max-width: $br-tablet) {
       width: 100vw;
     }
   }
