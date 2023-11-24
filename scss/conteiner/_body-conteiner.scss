@@ -1,5 +1,6 @@
 .body-conteiner {
-  width: 1200px;
+  max-width: 1200px;
+  min-width: 480px;
   background-color: $color-white;
   margin: 40px 131px 90px 40px;
   box-shadow: 10px -3px 100px $color-black;

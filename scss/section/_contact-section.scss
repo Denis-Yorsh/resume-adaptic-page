@@ -3,14 +3,30 @@
   border-bottom-left-radius: 20px;
   background-color: $color-darc-blue;
   width: 370px;
+  color: $color-white;
   &__img {
     width: 370px;
     height: auto;
     margin: 40px 40px 40px 0;
     border-radius: 120px;
   }
-  &__h1 {
+  &__h1,
+  &__p {
     width: 370px;
     text-align: center;
+  }
+  &__h3 {
+    width: 370px;
+    margin-left: 40px;
+  }
+  &__p {
+    font-weight: 900;
+    margin: 40px 0;
+  }
+  & a {
+    color: $color-white;
+  }
+  & li {
+    margin-bottom: 20px;
   }
 }

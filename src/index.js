@@ -11,8 +11,9 @@ $(() => {
     "blind",
     "shake",
     "pulsate",
+    "clip",
   ];
-  const random = () => Math.floor(Math.random() * (7 - 0 + 1) + 0);
+  const random = () => Math.floor(Math.random() * (8 - 0 + 1) + 0);
   const main = $("#main");
 
   $(main).toggle(effectArray[random()], 2000);
