@@ -1,5 +1,13 @@
 .portfolio-section {
   &__a {
     color: $color-black;
+    display: flex;
+    align-content: center;
+    margin-bottom: 5px;
+  }
+  &__gitHub {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
   }
 }
