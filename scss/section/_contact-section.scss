@@ -33,6 +33,8 @@
     margin: 40px 0;
   }
   & a {
+    display: flex;
+    align-content: center;
     color: $color-white;
     margin-left: 40px;
   }
@@ -45,24 +47,19 @@
     height: auto;
     border-radius: 5px;
     border: 1px solid white;
+    margin-right: 5px;
   }
   &__mail {
-    display: flex;
-    align-content: center;
     width: 20px;
     height: auto;
     margin-right: 5px;
   }
   &__telegram {
-    display: flex;
-    align-content: center;
     width: 20px;
     height: auto;
     margin-right: 5px;
   }
   &__skype {
-    display: flex;
-    align-content: center;
     width: 20px;
     height: auto;
     margin-right: 5px;
