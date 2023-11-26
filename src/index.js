@@ -1,5 +1,5 @@
 const $ = require("jquery");
-const $jqueryUi = require("jquery-ui/dist/jquery-ui.min");
+require("jquery-ui/dist/jquery-ui.min");
 
 $(() => {
   const effectArray = [
