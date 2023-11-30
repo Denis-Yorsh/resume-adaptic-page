@@ -33,9 +33,10 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! jquery-ui/dist/jquery-ui.min */ \"./node_modules/jquery-ui/dist/jquery-ui.min.js\");\n\n$(() => {\n  const effectArray = [\n    \"explode\",\n    \"bounce\",\n    \"puff\",\n    \"scale\",\n    \"size\",\n    \"blind\",\n    \"shake\",\n    \"pulsate\",\n    \"clip\",\n  ];\n  const random = () => Math.floor(Math.random() * (8 - 0 + 1) + 0);\n  const $main = $(\"#main\");\n\n  $($main).toggle(effectArray[random()], 500);\n  $($main).toggle(effectArray[random()], 1500);\n\n  $(\"a\").click((event) => {\n    event.preventDefault();\n    $($main).toggle(effectArray[random()], 500);\n    $($main).toggle(effectArray[random()], 1500);\n    setTimeout(() => {\n      location.href = event.target.href;\n    }, 2000);\n  });\n});\n\n//# sourceURL=webpack://resume-adaptic-page/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jquery_ui_dist_jquery_ui_min__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery-ui/dist/jquery-ui.min */ \"./node_modules/jquery-ui/dist/jquery-ui.min.js\");\n/* harmony import */ var jquery_ui_dist_jquery_ui_min__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery_ui_dist_jquery_ui_min__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()(() => {\n  const effectArray = [\n    \"explode\",\n    \"bounce\",\n    \"puff\",\n    \"scale\",\n    \"size\",\n    \"blind\",\n    \"shake\",\n    \"pulsate\",\n    \"clip\",\n  ];\n  const random = () => Math.floor(Math.random() * (8 - 0 + 1) + 0);\n  const $main = jquery__WEBPACK_IMPORTED_MODULE_0___default()(\"#main\");\n\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()($main).toggle(effectArray[random()], 500);\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()($main).toggle(effectArray[random()], 1500);\n\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()(\"a\").click((event) => {\n    event.preventDefault();\n    jquery__WEBPACK_IMPORTED_MODULE_0___default()($main).toggle(effectArray[random()], 500);\n    jquery__WEBPACK_IMPORTED_MODULE_0___default()($main).toggle(effectArray[random()], 1500);\n    setTimeout(() => {\n      location.href = event.target.href;\n    }, 2000);\n  });\n});\n\n//# sourceURL=webpack://resume-adaptic-page/./src/index.js?");
 
 /***/ })
 
@@ -64,6 +65,47 @@ eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/j
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
