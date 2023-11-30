@@ -13,16 +13,19 @@ $(() => {
     "pulsate",
     "clip",
   ];
+  const toggles = (teg) => {
+    $(teg).toggle(effectArray[random()], 500);
+    $(teg).toggle(effectArray[random()], 1500);
+  };
+
   const random = () => Math.floor(Math.random() * (8 - 0 + 1) + 0);
   const $main = $("#main");
 
-  $($main).toggle(effectArray[random()], 500);
-  $($main).toggle(effectArray[random()], 1500);
+  toggles($main);
 
   $("a").click((event) => {
     event.preventDefault();
-    $($main).toggle(effectArray[random()], 500);
-    $($main).toggle(effectArray[random()], 1500);
+    toggles($main)
     setTimeout(() => {
       location.href = event.target.href;
     }, 2000);
