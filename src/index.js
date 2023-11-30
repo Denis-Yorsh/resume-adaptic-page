@@ -14,14 +14,15 @@ $(() => {
     "clip",
   ];
   const random = () => Math.floor(Math.random() * (8 - 0 + 1) + 0);
-  const main = $("#main");
+  const $main = $("#main");
 
-  $(main).toggle(effectArray[random()], 2000);
+  $($main).toggle(effectArray[random()], 500);
+  $($main).toggle(effectArray[random()], 1500);
 
   $("a").click((event) => {
     event.preventDefault();
-    $(main).toggle(effectArray[random()], 500);
-    $(main).toggle(effectArray[random()], 1500);
+    $($main).toggle(effectArray[random()], 500);
+    $($main).toggle(effectArray[random()], 1500);
     setTimeout(() => {
       location.href = event.target.href;
     }, 2000);
