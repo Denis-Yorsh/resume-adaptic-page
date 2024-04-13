@@ -3,6 +3,13 @@
     display: flex;
     gap: 20px;
     justify-content: space-around;
-    margin-top: 40px;
+    margin: 40px 10px 0 10px;
+    @media (max-width: $br-1000) {
+      h2,
+      li {
+        white-space: nowrap;
+      }
+      justify-content: space-between;
+    }
   }
 }
